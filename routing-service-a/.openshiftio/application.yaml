@@ -86,7 +86,7 @@ objects:
     type: ClusterIP
     selector:
       app: nodejs-istio-routing-service
-      project: nodejs-istio-routing-service-a
+      project: nodejs-istio-routing-service
       provider: nodeshift
   metadata:
     name: nodejs-istio-routing-service
