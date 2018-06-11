@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Template
 metadata:
-  name: nodejs-istio-routing-service-b-servicb
+  name: nodejs-istio-routing-service-b-service
   annotations:
     description: The Istio Routing Mission shows routing with Istio
     tags: nodejs, routing
@@ -89,7 +89,7 @@ objects:
       project: nodejs-istio-routing-service-b
       provider: nodeshift
   metadata:
-    name: nodejs-istio-routing-service-b
+    name: nodejs-istio-routing-service
     labels:
       app: nodejs-istio-routing-service
       provider: nodeshift

@@ -89,7 +89,7 @@ objects:
       project: nodejs-istio-routing-service-a
       provider: nodeshift
   metadata:
-    name: nodejs-istio-routing-service-a
+    name: nodejs-istio-routing-service
     labels:
       app: nodejs-istio-routing-service
       provider: nodeshift
