@@ -103,7 +103,7 @@ objects:
     labels:
       app: nodejs-istio-routing-service
       provider: nodeshift
-      project: nodejs-istio-routing-service-a
+      project: nodejs-istio-routing-service
       version: a
   spec:
     template:
@@ -134,13 +134,12 @@ objects:
           sidecar.istio.io/inject: "true"
         labels:
           app: nodejs-istio-routing-service
-          version: a
-          project: nodejs-istio-routing-service-a
+          project: nodejs-istio-routing-service
           provider: nodeshift
     replicas: 1
     selector:
       app: nodejs-istio-routing-service
-      project: nodejs-istio-routing-service-a
+      project: nodejs-istio-routing-service
       provider: nodeshift
     triggers:
       - type: ConfigChange

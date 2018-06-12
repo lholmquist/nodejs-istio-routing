@@ -3,13 +3,18 @@ metadata:
     app: nodejs-istio-routing-service
     version: b
 spec:
+  selector:
+      app: nodejs-istio-routing-service
+      project: nodejs-istio-routing-service
+      provider: nodeshift
   template:
     metadata:
       annotations:
           sidecar.istio.io/inject: "true"
       labels:
-        app: nodejs-istio-routing-service
-        version: b
+          project: nodejs-istio-routing-service
+          app: nodejs-istio-routing-service
+          version: b
     spec:
       containers:
         - readinessProbe:
