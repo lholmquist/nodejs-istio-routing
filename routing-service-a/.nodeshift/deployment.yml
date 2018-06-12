@@ -1,8 +1,20 @@
+metadata:
+  labels:
+    app: nodejs-istio-routing-service
+    version: a
 spec:
+  selector:
+      app: nodejs-istio-routing-service
+      project: nodejs-istio-routing-service
+      provider: nodeshift
   template:
     metadata:
       annotations:
           sidecar.istio.io/inject: "true"
+      labels:
+          project: nodejs-istio-routing-service
+          app: nodejs-istio-routing-service
+          version: a
     spec:
       containers:
         - readinessProbe:
