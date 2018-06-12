@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <licenseSummary>
-    <project>wfswarm-istio-routing-client</project>
+    <project>nodejs-istio-routing-client</project>
     <version>1.0.0</version>
     <license>Apache-2.0</license>
     <dependencies>

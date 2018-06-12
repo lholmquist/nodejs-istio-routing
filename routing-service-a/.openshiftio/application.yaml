@@ -137,7 +137,6 @@ objects:
           version: a
           project: nodejs-istio-routing-service-a
           provider: nodeshift
-          version: a
     replicas: 1
     selector:
       app: nodejs-istio-routing-service

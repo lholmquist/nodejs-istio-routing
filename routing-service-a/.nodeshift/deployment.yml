@@ -1,8 +1,15 @@
+metadata:
+  labels:
+    app: nodejs-istio-routing-service
+    version: a
 spec:
   template:
     metadata:
       annotations:
           sidecar.istio.io/inject: "true"
+      labels:
+          app: nodejs-istio-routing-service
+          version: a
     spec:
       containers:
         - readinessProbe:

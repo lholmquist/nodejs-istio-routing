@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <licenseSummary>
-    <project>nodejs-istio-routing-service-a</project>
+    <project>nodejs-istio-routing-service-b</project>
     <version>1.0.0</version>
     <license>Apache-2.0</license>
     <dependencies>
