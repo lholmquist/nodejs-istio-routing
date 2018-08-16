@@ -22,6 +22,7 @@ module.exports = endpoint => {
   return new Promise((resolve, reject) => {
     roi.get({endpoint})
       .then(response => {
+        console.log(response.statusCode, response);
         if (response.statusCode !== 200) {
           return reject();
         }
